@@ -4,266 +4,892 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For My Faizuuu ❤️</title>
+<meta name="theme-color" content="#f8b9cf">
+<title>For My Faizuuu 🌷</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+ --pink:#ff8eae;
+ --light:#ffe4ed;
+ --deep:#a73560;
+ --cream:#fff8fa;
 }
+
+* {
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+
+html { scroll-behavior:smooth; }
 
 body {
-    font-family: 'Georgia', serif;
-    background: linear-gradient(135deg, #2b1024, #631b43, #a83e65);
-    color: white;
-    text-align: center;
-    overflow-x: hidden;
-}
-
-section {
-    min-height: 100vh;
-    padding: 70px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-h1 {
-    font-size: clamp(38px, 9vw, 65px);
-    color: #ffb6cf;
-    text-shadow: 0 0 20px #ff5c9a;
-}
-
-h2 {
-    color: #ffc1d6;
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-
-p {
-    line-height: 1.9;
-    font-size: 17px;
-}
-
-.card {
-    background: rgba(255,255,255,0.10);
-    border: 1px solid rgba(255,255,255,0.25);
-    backdrop-filter: blur(12px);
-    padding: 30px 23px;
-    border-radius: 25px;
-    width: min(100%, 550px);
-    margin: 20px auto;
-    box-shadow: 0 10px 35px #21081870;
+ background:linear-gradient(145deg,#fff0f5,#fbd1df,#f9b6cf);
+ color:#702e4c;
+ font-family:'Poppins',sans-serif;
+ overflow-x:hidden;
 }
 
 button {
-    background: linear-gradient(45deg, #ff649a, #ff9ebc);
-    border: none;
-    padding: 15px 28px;
-    border-radius: 30px;
-    color: #4b1631;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 12px;
-    transition: 0.3s;
+ cursor:pointer;
+ font-family:inherit;
+ border:none;
 }
 
-button:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 20px #ffb2d0;
+section {
+ min-height:100vh;
+ padding:85px 20px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ text-align:center;
+ position:relative;
+}
+
+.container {
+ width:min(100%,650px);
+ margin:auto;
+ position:relative;
+ z-index:2;
+}
+
+.script {
+ font-family:'Dancing Script',cursive;
+}
+
+h1 {
+ font-family:'Dancing Script',cursive;
+ font-size:clamp(55px,12vw,95px);
+ color:#bd4773;
+ text-shadow:0 5px 20px #ffffff;
+}
+
+h2 {
+ font-family:'Playfair Display',serif;
+ font-size:clamp(28px,7vw,40px);
+ color:#a43d66;
+ margin-bottom:20px;
+}
+
+p {
+ font-size:15px;
+ line-height:2;
+}
+
+.card {
+ background:rgba(255,255,255,.56);
+ border:1px solid rgba(255,255,255,.85);
+ border-radius:30px;
+ padding:32px 23px;
+ box-shadow:0 15px 45px #ad456522;
+ backdrop-filter:blur(15px);
+}
+
+.small {
+ font-size:12px;
+ letter-spacing:3px;
+ text-transform:uppercase;
+ color:#bd6387;
+ margin-bottom:16px;
+}
+
+.btn {
+ display:inline-block;
+ padding:15px 27px;
+ margin:12px 5px;
+ border-radius:40px;
+ background:linear-gradient(120deg,#ec79a0,#f6abc4);
+ color:white;
+ font-weight:600;
+ box-shadow:0 8px 20px #d65b8a55;
+ transition:.3s;
+}
+
+.btn:hover {
+ transform:translateY(-4px) scale(1.04);
+}
+
+.btn.secondary {
+ background:#fff;
+ color:#b74c77;
+}
+
+.flower {
+ font-size:65px;
+ animation:sway 3s ease-in-out infinite;
+ display:inline-block;
+}
+
+@keyframes sway {
+ 0%,100% {transform:rotate(-8deg) translateY(0)}
+ 50% {transform:rotate(8deg) translateY(-15px)}
+}
+
+@keyframes pulse {
+ 50% {transform:scale(1.12)}
+}
+
+@keyframes fade {
+ from {opacity:0;transform:translateY(20px)}
+ to {opacity:1;transform:translateY(0)}
+}
+
+.reveal {
+ animation:fade .8s ease both;
+}
+
+.floating {
+ position:fixed;
+ bottom:-50px;
+ pointer-events:none;
+ z-index:10;
+ animation:floatUp linear forwards;
+}
+
+@keyframes floatUp {
+ to {
+  transform:translateY(-115vh) rotate(360deg);
+  opacity:0;
+ }
+}
+
+.sparkle {
+ color:#fff;
+ text-shadow:0 0 12px #e85d91;
+}
+
+.divider {
+ color:#d8789c;
+ margin:20px;
+ letter-spacing:12px;
 }
 
 .urdu {
-    font-size: 25px;
-    line-height: 2.1;
-    color: #ffe0eb;
-    direction: rtl;
+ font-size:25px;
+ line-height:2.2;
+ direction:rtl;
+ font-family:serif;
+ color:#913d64;
+ margin:18px 0;
 }
 
-.tulip {
-    font-size: 65px;
-    animation: float 3s infinite ease-in-out;
+.farsi {
+ font-size:25px;
+ direction:rtl;
+ line-height:2;
+ font-family:serif;
+ color:#913d64;
+ margin:20px 0;
 }
 
-@keyframes float {
-    50% { transform: translateY(-18px) rotate(5deg); }
+.envelope {
+ width:230px;
+ height:150px;
+ margin:35px auto;
+ background:#e990ae;
+ border-radius:8px;
+ position:relative;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ cursor:pointer;
+ box-shadow:0 12px 25px #9b3a5b33;
 }
 
-.heart {
-    position: fixed;
-    bottom: -30px;
-    animation: rise 7s linear infinite;
-    pointer-events: none;
-    z-index: 0;
+.envelope:before {
+ content:"";
+ position:absolute;
+ top:0;
+ left:0;
+ border-left:115px solid transparent;
+ border-right:115px solid transparent;
+ border-top:85px solid #f5b0c6;
+ transform-origin:top;
+ transition:.6s;
+ z-index:2;
 }
 
-@keyframes rise {
-    to {
-        transform: translateY(-110vh) rotate(360deg);
-        opacity: 0;
-    }
+.envelope.open:before {
+ transform:rotateX(180deg);
 }
 
-.content {
-    position: relative;
-    z-index: 2;
+.envelope span {
+ font-size:40px;
+ z-index:1;
 }
 
-#surprise {
-    display: none;
-    font-size: 20px;
-    color: #ffd5e4;
-    margin-top: 20px;
-    animation: appear 1s;
+.letter {
+ display:none;
+ background:#fffafc;
+ color:#7c3856;
+ padding:27px;
+ border-radius:15px;
+ margin:15px auto;
+ text-align:left;
+ line-height:2;
+ animation:fade .8s;
 }
 
-@keyframes appear {
-    from { opacity: 0; transform: scale(.8); }
-    to { opacity: 1; transform: scale(1); }
+.promise {
+ background:#fff8fb;
+ margin:12px 0;
+ padding:16px;
+ border-radius:15px;
+ cursor:pointer;
+ text-align:left;
+ transition:.3s;
+ border:1px solid #f8d4e1;
+}
+
+.promise:hover {
+ transform:translateX(5px);
+ background:#ffe7ef;
+}
+
+.promise p {
+ display:none;
+ margin-top:10px;
+ color:#a34a6d;
+}
+
+.promise.active p {display:block;}
+
+.game-btn {
+ display:block;
+ width:100%;
+ margin:12px 0;
+ padding:15px;
+ background:#fff;
+ border:1px solid #f4b3ca;
+ color:#9e4568;
+ border-radius:15px;
+ font-size:15px;
+ transition:.2s;
+}
+
+.game-btn:hover {background:#ffe5ef;}
+
+#gameAnswer {
+ margin-top:20px;
+ font-weight:600;
+ color:#ae3f6c;
+}
+
+.reason {
+ font-family:'Dancing Script',cursive;
+ font-size:29px;
+ padding:18px;
+ color:#a53c68;
+ min-height:90px;
+}
+
+.final {
+ background:linear-gradient(145deg,#f8b5cc,#fce4ed,#ed9fbc);
 }
 
 footer {
-    padding: 30px;
-    color: #ffc6d9;
+ padding:30px;
+ text-align:center;
+ color:#a44d70;
+ font-size:13px;
+}
+
+.music {
+ position:fixed;
+ top:15px;
+ right:15px;
+ z-index:20;
+ background:#fff;
+ color:#a43e68;
+ padding:12px 16px;
+ border-radius:30px;
+ box-shadow:0 5px 20px #9d466022;
+}
+
+.hidden {display:none!important;}
+
+#noBtn {
+ position:relative;
+}
+
+@media(max-width:450px) {
+ .card {padding:25px 17px}
+ section {padding:75px 15px}
 }
 </style>
 </head>
 
 <body>
 
-<section>
-<div class="content">
-    <div class="tulip">🌷</div>
-    <p>A little website for someone VERY special...</p>
-    <h1>Faizuuu ❤️</h1>
-    <h2>My favourite Shernii 🥺</h2>
-    <p>
-        I know you're angry with me,<br>
-        but can I have just a little moment of your time?
-    </p>
-    <button onclick="document.getElementById('apology').scrollIntoView({behavior:'smooth'})">
-        Open this for me 💌
-    </button>
+<button class="music" onclick="toggleMusic()" id="musicBtn">
+♫ Play music
+</button>
+
+<!-- WELCOME -->
+
+<section id="home">
+<div class="container reveal">
+
+ <p class="small">A little world made just for you</p>
+
+ <div class="flower">🌷</div>
+
+ <h1>Faizuuu</h1>
+
+ <p style="font-size:19px;color:#a43d67">
+ My favourite human, my Shernii ❤️
+ </p>
+
+ <div class="divider">♡ ✧ ♡</div>
+
+ <p>
+ Before you continue, I have one tiny request...
+ <br>
+ Please don't get angry before reading everything. 🥺
+ </p>
+
+ <button class="btn" onclick="startJourney()">
+ Enter your little world 💗
+ </button>
+
+ <p style="font-size:12px;margin-top:20px">
+ Made with love, apologies and a little bit of stupidity.
+ </p>
+
 </div>
 </section>
 
-<section id="apology">
-<div class="content card">
-    <h2>My Faizuuu 🥺</h2>
-    <p>
-        I don't like seeing you angry.
-        I don't like knowing that something I did
-        made my favourite person upset.
-        <br><br>
-        I'm genuinely sorry, Faizuuu.
-        I may not always be perfect, but I never
-        want to take your feelings lightly.
-        <br><br>
-        Please forgive your silly person.
-        I miss your smile, your talks and
-        even your little complaints. ❤️
-    </p>
+
+<!-- APOLOGY -->
+
+<section id="sorry">
+<div class="container card reveal">
+
+ <div class="flower">🥺</div>
+
+ <p class="small">A message from your silly person</p>
+
+ <h2>My Faizuuu...</h2>
+
+ <p>
+ I know you're angry with me.
+ Maybe I made a mistake, maybe I didn't understand
+ something properly, or maybe I hurt you without
+ realizing how much it would affect you.
+ <br><br>
+
+ But I genuinely don't want you to feel unheard
+ or unimportant.
+ <br><br>
+
+ I'm sorry, Faizuuu.
+ Not just because you're angry, but because
+ your feelings genuinely matter to me.
+ <br><br>
+
+ I cannot promise that I'll never make mistakes,
+ but I can promise that I'll keep trying to become
+ better for you.
+ </p>
+
+ <div class="divider">♡</div>
+
+ <p class="script" style="font-size:30px">
+ Can we please make peace? 🥹
+ </p>
+
 </div>
 </section>
 
-<section>
-<div class="content card">
-    <h2>Ek baat kahun? 🌹</h2>
-    <p class="urdu">
-        چاند کی مثال دوں تو چاند میں داغ ہیں،
-        تمہاری خوبصورتی کے آگے تو ستارے بھی بے چراغ ہیں۔
-    </p>
-    <p>
-        If the moon is called beautiful,
-        I wonder what words could ever describe you.
-        Even the moon would feel shy standing beside you. ❤️
-    </p>
-    <br>
-    <p class="urdu">
-        تمہاری مسکراہٹ میری پسندیدہ روشنی ہے،
-        تمہاری خوشی ہی میری سب سے بڑی خوشی ہے۔
-    </p>
-    <p>
-        Your smile is my favourite view,
-        and your happiness means more than you know.
-    </p>
+
+<!-- LOVE LETTER -->
+
+<section id="letterSection">
+<div class="container card">
+
+ <p class="small">Something I wrote for you</p>
+
+ <h2>A letter for my Shernii 💌</h2>
+
+ <p>Tap the envelope to open your letter.</p>
+
+ <div class="envelope" onclick="openLetter()" id="envelope">
+  <span>💌</span>
+ </div>
+
+ <div class="letter" id="letter">
+
+  Dear Faizuuu,
+
+  <br><br>
+
+  I don't know how to put everything into words,
+  but I want you to know that you're genuinely
+  one of my favourite people.
+
+  <br><br>
+
+  I love your talks, your attitude, your little
+  tantrums, your cute anger and the way you
+  make ordinary moments special.
+
+  <br><br>
+
+  Even when you're being a Shernii, I still want
+  to understand you instead of making you feel
+  like you have to explain your feelings a hundred times.
+
+  <br><br>
+
+  I don't want to win arguments against you.
+  I want us to understand each other.
+
+  <br><br>
+
+  Please forgive your silly person.
+
+  <br><br>
+
+  Yours, with lots of love ❤️
+ </div>
+
 </div>
 </section>
 
-<section>
-<div class="content card">
-    <h2>A promise to my Shernii 🤞🏻</h2>
-    <div class="tulip">🌷</div>
-    <p>
-        Faizuuu, from now on...
-        <br><br>
-        I'll listen to you more carefully.
-        I'll respect your feelings.
-        I'll try to understand you instead of arguing.
-        I'll work on my mistakes.
-        <br><br>
-        And whatever you say, I'll do my best
-        to fulfil it. Your wishes, your little demands
-        and your happiness matter to me.
-        <br><br>
-        Bas ab gussa thoda kam kar do, meri jaan. 🥺
-    </p>
+
+<!-- SHAYARI -->
+
+<section id="poetry">
+<div class="container card">
+
+ <p class="small">For the prettiest girl</p>
+
+ <h2>Some words for you 🌹</h2>
+
+ <div class="flower">🌷</div>
+
+ <p class="urdu">
+ تمہیں چاند کہوں تو چاند میں داغ ہے،
+ تمہاری خوبصورتی کا اپنا ہی انداز ہے۔
+ </p>
+
+ <p>
+ If I compare you to the moon, the moon has spots.
+ You have a beauty that needs no comparison.
+ </p>
+
+ <div class="divider">✧ ♡ ✧</div>
+
+ <p class="urdu">
+ تم مسکرا دو تو موسم بدل جاتے ہیں،
+ تم خفا ہو تو سارے رنگ بکھر جاتے ہیں۔
+ </p>
+
+ <p>
+ Your smile can change the entire atmosphere,
+ and when you're upset, even the colours seem to fade.
+ </p>
+
+ <div class="divider">♡</div>
+
+ <p class="farsi">
+ تو زیباترین اتفاق زندگی منی ❤️
+ </p>
+
+ <p>
+ You are the most beautiful coincidence of my life.
+ </p>
+
+ <div class="divider">✧</div>
+
+ <p class="urdu">
+ نہ چاند کی خواہش، نہ ستاروں کی تمنا،
+ بس تمہاری مسکراہٹ رہے میری دنیا۔
+ </p>
+
+ <p>
+ I don't wish for the moon or stars,
+ I just wish to see you smile.
+ </p>
+
 </div>
 </section>
 
-<section>
-<div class="content card">
-    <h2>One last thing... 💗</h2>
-    <p>
-        I don't want to win an argument against you.
-        I want to win back your smile.
-        <br><br>
-        I don't need a perfect day.
-        I just need my Faizuuu to be happy.
-    </p>
 
-    <button onclick="showLove()">A little surprise? 🎁</button>
+<!-- PROMISES -->
 
-    <div id="surprise">
-        <div class="tulip">🌷❤️🌷</div>
-        <h2>YOU ARE SPECIAL, FAIZUUU!</h2>
-        <p>
-            No matter how angry you are,
-            you will always be my favourite person.
-            <br><br>
-            Ab ek chhoti si smile toh banti hai na? 🥹
-            <br><br>
-            I LOVE YOU, MY SHERNII! ❤️
-        </p>
-    </div>
+<section id="promises">
+<div class="container card">
+
+ <p class="small">Seven promises, one Shernii</p>
+
+ <h2>My promises to you 🤞🏻</h2>
+
+ <p>Tap each promise to reveal it.</p>
+
+ <div class="promise" onclick="this.classList.toggle('active')">
+  💗 01. I promise to listen.
+  <p>I'll listen to understand you, not just to reply.</p>
+ </div>
+
+ <div class="promise" onclick="this.classList.toggle('active')">
+  🌷 02. I promise to respect your feelings.
+  <p>Your emotions matter, even when I see things differently.</p>
+ </div>
+
+ <div class="promise" onclick="this.classList.toggle('active')">
+  🥺 03. I promise to work on my mistakes.
+  <p>I'll try to improve instead of repeating the same mistakes.</p>
+ </div>
+
+ <div class="promise" onclick="this.classList.toggle('active')">
+  🎀 04. I promise to give you attention.
+  <p>You shouldn't have to beg for my time or attention.</p>
+ </div>
+
+ <div class="promise" onclick="this.classList.toggle('active')">
+  ❤️ 05. I promise to respect your boundaries.
+  <p>I'll respect your space, your choices and your comfort.</p>
+ </div>
+
+ <div class="promise" onclick="this.classList.toggle('active')">
+  🌹 06. I promise to make you smile.
+  <p>I'll keep finding silly little ways to make your day better.</p>
+ </div>
+
+ <div class="promise" onclick="this.classList.toggle('active')">
+  👑 07. I promise to value you.
+  <p>I'll never treat your presence or kindness as something ordinary.</p>
+ </div>
+
+ <div class="divider">♡ ♡ ♡</div>
+
+ <p class="script" style="font-size:28px">
+ And yes, your silly person will listen to you! 🫡
+ </p>
+
 </div>
 </section>
+
+
+<!-- GAME -->
+
+<section id="game">
+<div class="container card">
+
+ <p class="small">A very important question</p>
+
+ <h2>Faizuuu, tell me honestly... 🥺</h2>
+
+ <p>How angry are you right now?</p>
+
+ <button class="game-btn" onclick="answer('very')">
+ 😤 Extremely angry. Don't talk to me.
+ </button>
+
+ <button class="game-btn" onclick="answer('little')">
+ 😒 Thodaaa sa angry.
+ </button>
+
+ <button class="game-btn" onclick="answer('smile')">
+ 🥹 Okay, I'm smiling a little.
+ </button>
+
+ <button class="game-btn" onclick="answer('love')">
+ ❤️ I forgive you, silly!
+ </button>
+
+ <div id="gameAnswer"></div>
+
+</div>
+</section>
+
+
+<!-- REASONS -->
+
+<section id="reasons">
+<div class="container card">
+
+ <p class="small">A list that never ends</p>
+
+ <h2>Why my Faizuuu is special 🎀</h2>
+
+ <div class="flower">🌸</div>
+
+ <div class="reason" id="reason">
+ Because you're simply YOU.
+ </div>
+
+ <button class="btn" onclick="nextReason()">
+ Tell me another reason 💗
+ </button>
+
+ <p style="font-size:12px;margin-top:15px">
+ Warning: This list might never end.
+ </p>
+
+</div>
+</section>
+
+
+<!-- FUNNY ENDING -->
+
+<section class="final" id="final">
+<div class="container card">
+
+ <p class="small">The final examination 😂</p>
+
+ <div class="flower">🐻🌷</div>
+
+ <h2>Faizuuu, one last question...</h2>
+
+ <p style="font-size:20px">
+ Will you forgive this innocent,
+ cute, handsome and extremely
+ hardworking silly person?
+ </p>
+
+ <div style="margin-top:25px">
+
+  <button class="btn" onclick="forgive()">
+ YES, YOU IDIOT! ❤️
+  </button>
+
+  <button class="btn secondary" id="noBtn"
+   onclick="noThanks()">
+ NO 😤
+  </button>
+
+ </div>
+
+ <div id="finalAnswer" style="margin-top:25px"></div>
+
+</div>
+</section>
+
 
 <footer>
-    Made with lots of love, just for Faizuuu ❤️
-    <br>
-    From your silly person 🥺
+🌷 Designed with love, just for Faizuuu 🌷
+<br><br>
+No matter how many times I say it...
+<br>
+YOU ARE SPECIAL. ❤️
+<br><br>
+<p class="script" style="font-size:23px">
+ Your forever silly person.
+</p>
 </footer>
 
+
 <script>
-function showLove() {
-    document.getElementById("surprise").style.display = "block";
-    for(let i=0; i<25; i++) {
-        let heart = document.createElement("div");
-        heart.innerHTML = ["❤️","💗","🌷","💕"][Math.floor(Math.random()*4)];
-        heart.className = "heart";
-        heart.style.left = Math.random()*100 + "vw";
-        heart.style.fontSize = (20+Math.random()*25) + "px";
-        heart.style.animationDuration = (3+Math.random()*4) + "s";
-        document.body.appendChild(heart);
-        setTimeout(()=>heart.remove(),7000);
-    }
+
+// MUSIC: ORIGINAL SOFT BROWSER-GENERATED INSTRUMENTAL
+
+let audioContext;
+let musicOn = false;
+let musicTimer;
+let noteIndex = 0;
+
+const notes = [
+ [261.63,329.63,392.00],
+ [220.00,261.63,329.63],
+ [174.61,220.00,261.63],
+ [196.00,246.94,293.66],
+ [261.63,329.63,392.00]
+];
+
+function playChord() {
+ if(!musicOn || !audioContext) return;
+
+ let chord = notes[noteIndex % notes.length];
+ noteIndex++;
+
+ chord.forEach((frequency,i)=>{
+  let osc = audioContext.createOscillator();
+  let gain = audioContext.createGain();
+
+  osc.type = "sine";
+  osc.frequency.value = frequency;
+
+  gain.gain.setValueAtTime(0,audioContext.currentTime);
+  gain.gain.linearRampToValueAtTime(
+   0.035,audioContext.currentTime+0.3
+  );
+  gain.gain.exponentialRampToValueAtTime(
+   0.001,audioContext.currentTime+2.7
+  );
+
+  osc.connect(gain);
+  gain.connect(audioContext.destination);
+
+  osc.start();
+  osc.stop(audioContext.currentTime+2.8);
+ });
 }
+
+function toggleMusic() {
+ if(!audioContext) {
+  audioContext = new (window.AudioContext ||
+  window.webkitAudioContext)();
+ }
+
+ if(audioContext.state === "suspended") {
+  audioContext.resume();
+ }
+
+ musicOn = !musicOn;
+
+ document.getElementById("musicBtn").innerText =
+ musicOn ? "♫ Pause music" : "♫ Play music";
+
+ if(musicOn) {
+  playChord();
+  musicTimer = setInterval(playChord,2800);
+ } else {
+  clearInterval(musicTimer);
+ }
+}
+
+
+// JOURNEY
+
+function startJourney() {
+ document.getElementById("sorry").scrollIntoView({
+  behavior:"smooth"
+ });
+ hearts(15);
+}
+
+
+// FLOATING HEARTS
+
+function hearts(amount=15) {
+ for(let i=0;i<amount;i++) {
+  let item = document.createElement("div");
+
+  item.className="floating";
+  item.innerHTML=["💗","💕","🌷","✨","❤️","🌸"][
+   Math.floor(Math.random()*6)
+  ];
+
+  item.style.left=Math.random()*100+"vw";
+  item.style.fontSize=(18+Math.random()*25)+"px";
+  item.style.animationDuration=(4+Math.random()*5)+"s";
+
+  document.body.appendChild(item);
+
+  setTimeout(()=>item.remove(),9000);
+ }
+}
+
+setInterval(()=>hearts(2),1800);
+
+
+// LETTER
+
+function openLetter() {
+ document.getElementById("envelope").classList.toggle("open");
+
+ let letter=document.getElementById("letter");
+
+ letter.style.display =
+ letter.style.display==="block" ? "none" : "block";
+
+ if(letter.style.display==="block") hearts(12);
+}
+
+
+// GAME
+
+function answer(type) {
+ let messages = {
+  very:"Okay Shernii! 🥺 I'll bring the biggest apology and wait patiently. ❤️",
+  little:"Thodaaa sa? Progress! Sending 1000 virtual tulips! 🌷",
+  smile:"MISSION: ONE SMILE ACHIEVED! But I still owe you an apology. 🥹",
+  love:"WAIT! DID MY SHERNII JUST FORGIVE ME?! HAPPY DANCE! 💃❤️"
+ };
+
+ document.getElementById("gameAnswer").innerText =
+ messages[type];
+
+ hearts(12);
+}
+
+
+// REASONS
+
+let reasons = [
+ "Your smile. It deserves its own award. 🏆",
+ "Your beautiful eyes. ✨",
+ "Your cute little attitude. 😭",
+ "The way you talk. 💗",
+ "Your adorable tantrums. 🎀",
+ "Your kindness and beautiful heart. ❤️",
+ "Your laugh. My favourite sound.",
+ "The fact that you're impossible to replace.",
+ "Your Shernii energy. 👑",
+ "Because there is nobody quite like you.",
+ "And because you're my Faizuuu. 🌷"
+];
+
+let reasonIndex=0;
+
+function nextReason() {
+ document.getElementById("reason").innerText =
+ reasons[reasonIndex % reasons.length];
+
+ reasonIndex++;
+ hearts(6);
+}
+
+
+// FINAL BUTTONS
+
+function forgive() {
+ document.getElementById("finalAnswer").innerHTML =
+ `<div class="reveal">
+ <h2>WAITTTTT!!! 😭❤️</h2>
+ <div class="flower">🎉🌷💗</div>
+ <p>
+ I KNEW MY SHERNII HAD A SOFT CORNER
+ FOR THIS IDIOT!
+ <br><br>
+ Okay, now come here for a virtual hug!
+ 🫂🫂🫂
+ <br><br>
+ I LOVE YOUUUU, FAIZUUUU!
+ </p>
+ </div>`;
+
+ hearts(55);
+}
+
+function noThanks() {
+ document.getElementById("finalAnswer").innerHTML =
+ `<h2>EXCUSE MEEEE?! 😭</h2>
+ <p>
+ This website took so much effort
+ and you still said NOOO? 😂
+ <br><br>
+ Okay okay, I accept my punishment.
+ I will bring more apologies and tulips. 🌷
+ </p>`;
+
+ let button=document.getElementById("noBtn");
+
+ button.innerText="Still NO 😤";
+
+ // Playful but respectful: no escaping or forced YES.
+}
+
+
+// INITIAL EFFECT
+
+hearts(12);
+
 </script>
 
 </body>
-                </html>
-                
+</html>
